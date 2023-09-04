@@ -109,7 +109,7 @@ func EditSekolah(c echo.Context) error {
 		})
 	}
 
-	return c.JSON(http.StatusCreated, models.BaseResponse{
+	return c.JSON(http.StatusOK, models.BaseResponse{
 		Status:  true,
 		Message: "Success Edit Data",
 		Data:    SekolahReq,
@@ -131,7 +131,7 @@ func DeleteSekolah(c echo.Context) error {
 		})
 	}
 
-	return c.JSON(http.StatusCreated, models.BaseResponse{
+	return c.JSON(http.StatusOK, models.BaseResponse{
 		Status:  true,
 		Message: "Success Delete Data",
 		Data:    nil,
